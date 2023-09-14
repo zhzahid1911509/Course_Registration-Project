@@ -10,10 +10,13 @@ function App() {
   return (
     <>
        <h1 className='text-3xl font-bold text-center my-4'>Course Registration</h1>
-       <div className='flex justify-around'>
-      <Courses></Courses>
-      <Cart></Cart>
-    </div>
+      <div className='flex flex-col md:flex-row mx-5'>
+       
+       <Courses></Courses>
+       
+       <Cart></Cart>       
+
+      </div>
     </>
     
   )

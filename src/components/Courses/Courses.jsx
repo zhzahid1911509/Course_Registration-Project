@@ -13,7 +13,7 @@ const Courses = () => {
       },[])
 
     return (
-        <div className="md:w-2/3 grid grid-cols-3 gap-4">
+        <div className="flex flex-col md:w-2/3 md:grid md:grid-cols-3 gap-4 my-5">
             
             {
                 courses.map(
