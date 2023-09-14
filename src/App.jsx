@@ -1,16 +1,21 @@
-import { useState } from 'react'
 
 import './App.css'
+import Cart from './components/Cart/Cart'
+import Courses from './components/Courses/Courses'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
+  
 
   return (
     <>
-      
-      <h1>Vite + React</h1>
-     
+       <h1 className='text-3xl font-bold text-center my-4'>Course Registration</h1>
+       <div className='flex justify-around'>
+      <Courses></Courses>
+      <Cart></Cart>
+    </div>
     </>
+    
   )
 }
 

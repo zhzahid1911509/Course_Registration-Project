@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "cover_img": "https://i.ibb.co/TTC3vwM/course1.png",
+      "title": "Introduction to Python",
+      "description": "Learn the fundamentals of Python programming. Perfect for beginners.",
+      "price": 50.00,
+      "credit_hour": 3
+    },
+    {
+      "id": 2,  
+      "cover_img": "https://i.ibb.co/Xxzz9Fz/course2.jpg",
+      "title": "Web Development with JavaScript",
+      "description": "Build interactive web applications using JavaScript and related technologies.",
+      "price": 80.00,
+      "credit_hour": 4
+    },
+    {
+      "id": 3,
+      "cover_img": "https://i.ibb.co/zNk8twN/course3.jpg",
+      "title": "Data Science with R",
+      "description": "Unlock the power of data analysis and visualization with the R programming language.",
+      "price": 95.00,
+      "credit_hour": 5
+    },
+    {
+      "id": 4,
+      "cover_img": "https://i.ibb.co/FBMRxP8/course4.jpg",
+      "title": "Java Programming Mastery",
+      "description": "Become a Java expert and develop robust, enterprise-level applications.",
+      "price": 70.00,
+      "credit_hour": 4
+    },
+    {
+      "id": 5,
+      "cover_img": "https://i.ibb.co/2sbQXQX/course5.jpg",
+      "title": "Mobile App Development with React Native",
+      "description": "Create cross-platform mobile apps with React Native for iOS and Android.",
+      "price": 100.00,
+      "credit_hour": 5
+    },
+    {
+      "id": 6,
+      "cover_img": "https://i.ibb.co/QCmjT9m/course6.png",
+      "title": "Full-Stack Web Development",
+      "description": "Learn both front-end and back-end web development technologies.",
+      "price": 130.00,
+      "credit_hour": 6
+    },
+    {
+      "id": 7,
+      "cover_img": "https://i.ibb.co/QnX1M2K/course7.jpg",
+      "title": "Machine Learning Fundamentals",
+      "description": "Dive into the exciting field of machine learning and AI.",
+      "price": 90.00,
+      "credit_hour": 4
+    },
+    {
+      "id": 8,
+      "cover_img": "https://i.ibb.co/yyqXhSL/course8.jpg",
+      "title": "C# Game Development",
+      "description": "Create engaging video games using C# and popular game development engines.",
+      "price": 110.00,
+      "credit_hour": 6
+    },
+    {
+      "id": 9,
+      "cover_img": "https://i.ibb.co/9w04pT2/course9.jpg",
+      "title": "Blockchain Development",
+      "description": "Explore the world of blockchain technology and smart contract development.",
+      "price": 95.00,
+      "credit_hour": 5
+    }
+  ]
+  
