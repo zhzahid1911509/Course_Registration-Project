@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import Course from '../Course/Course';
 
 
-const Courses = () => {
+const Courses = ({handleAddCourse}) => {
     const [courses, setCourses] = useState([]);
 
     useEffect(()=>{
@@ -19,7 +19,8 @@ const Courses = () => {
                 courses.map(
                     course => <Course
                     key={course.id}
-                    course={course}>
+                    course={course}
+                    handleAddCourse={handleAddCourse}>
                     </Course>
                 )
             }
