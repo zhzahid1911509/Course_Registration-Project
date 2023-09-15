@@ -13,21 +13,26 @@ function App() {
 
   const [creditHour, setCreditHour] = useState(0);
 
-  const handleAddCourse = (course, hours) =>{
+  const [coursePrice, setCoursePrice] = useState(0);
+
+  const handleAddCourse = (course, hours, price) =>{
     //console.log(course.title);
     const isExist = cart.find(courseCart => courseCart.id == course.id);
     const newCreditHours = creditHour + hours;
+    const newCoursePrice = coursePrice + price;
 
     if(isExist){
       toast.error("This course has already been added");
     }
     else if(newCreditHours > 20){
-      toast.error("The credit hours limit is 20 hours maximum");
+      toast.error("The total credit hours limit is 20 hours maximum");
     }
     else{
       const newCart = [...cart, course];
       setCart(newCart);
+      console.log(newCreditHours);
       setCreditHour(newCreditHours);
+      setCoursePrice(newCoursePrice);
     }
     
   }
@@ -52,7 +57,7 @@ function App() {
        
        <Courses handleAddCourse={handleAddCourse}></Courses>
        
-       <Cart cart={cart} creditHour={creditHour}></Cart>  
+       <Cart cart={cart} creditHour={creditHour} coursePrice={coursePrice}></Cart>  
 
       
 

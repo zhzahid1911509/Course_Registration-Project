@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import Course from '../Course/Course';
 
@@ -29,7 +29,7 @@ const Courses = ({handleAddCourse}) => {
 };
 
 Courses.propTypes = {
-
+    handleAddCourse: PropTypes.func.isRequired
 }
 
 export default Courses;
