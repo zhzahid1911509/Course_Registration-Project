@@ -7,21 +7,29 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 
 
-
 function App() {
 
   const [cart, setCart] = useState([]);
 
-  const handleAddCourse = course =>{
+  const [creditHour, setCreditHour] = useState(0);
+
+  const handleAddCourse = (course, hours) =>{
     //console.log(course.title);
     const isExist = cart.find(courseCart => courseCart.id == course.id);
+    const newCreditHours = creditHour + hours;
+
     if(isExist){
       toast.error("This course has already been added");
     }
+    else if(newCreditHours > 20){
+      toast.error("The credit hours limit is 20 hours maximum");
+    }
     else{
       const newCart = [...cart, course];
-    setCart(newCart);
+      setCart(newCart);
+      setCreditHour(newCreditHours);
     }
+    
   }
 
   return (
@@ -36,7 +44,7 @@ function App() {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="dark"
+        theme="colored"
       />
        <h1 className='text-3xl font-bold text-center my-4'>Course Registration</h1>
       
@@ -44,7 +52,7 @@ function App() {
        
        <Courses handleAddCourse={handleAddCourse}></Courses>
        
-       <Cart cart={cart}></Cart>  
+       <Cart cart={cart} creditHour={creditHour}></Cart>  
 
       
 

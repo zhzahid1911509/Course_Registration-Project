@@ -1,7 +1,7 @@
 import CartCourse from "../CartCourse/CartCourse";
 import PropTypes from 'prop-types';
 
-const Cart = ({cart}) => {
+const Cart = ({cart, creditHour}) => {
     
     return (
         <div className="md:w-1/3 mx-5 my-5 p-2 rounded-xl bg-white h-fit">
@@ -15,7 +15,7 @@ const Cart = ({cart}) => {
            </ol>
            
             <hr />
-            <h4 className="text-xl font-semibold my-2">Total Credit Hour: </h4>
+            <h4 className="text-xl font-semibold my-2">Total Credit Hour: {creditHour}</h4>
             <hr />
             <h4 className="text-xl font-semibold my-2">Total Price: </h4>
         </div>
