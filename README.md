@@ -1,8 +1,10 @@
-# Add at least 3 Project features.
+# Project Live Link
+https://zh2000-site3-b8a7-course-registration.netlify.app/
+# Project features.
 **1) Showing Course Details dynamically <br/>
 2) Showing Selected Courses in the Cart <br/>
 3) Calculating Total Credit Hours, Total Courses Price, and the Remaining Course Hours.**
-# Discuss how you managed the state in your assignment project.
+# How to manage states in the project.
 I used `useState` hook to manage local state within a functional component. It allows to initialize and update state variables.
 For managing states, I followed the steps given bellow: <br/><br/>
 **1. Import the `useState` Hook <br/>
